@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summarization Result</title>
+    <style>
+        body {
+            background-color: #303030;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+        }
+        h1 {
+            color: #64B5F6;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        a {
+            color: #64B5F6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        #container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #logo-placeholder{
+            width: 300px; /* Adjust the logo width as needed */
+            margin-top: 20px;
+            padding-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Summarization Result</h1>
+    <!-- Placeholder for logo -->
+    <div id="logo-placeholder" ><img src="/static/summarization.jpg" alt=""></div>
+    <p><strong>Original Text:</strong></p>
+    <p>{{ text }}</p>
+    <p><strong>Summarized Text:</strong></p>
+    <p>{{ summarized_text }}</p>
+    <a href="/">Back to Home</a>
+</body>
+</html>
